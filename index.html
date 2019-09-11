@@ -16,7 +16,10 @@
 <script>
 	var s='肖战 王一博 博君一笑 bjyx web 吴博 小赞 诛仙 有匪 有韭 wyb xz ibo izhan 造谣 没必要 '
 	var keywords=s.split()
-	var subwords=[('【'+ss'】') for ss in keywords];
+	var subwords=[]
+	for(var i=0;i<keywords.length;i++){
+        	subwords.append('【'+keywords[i]+'】')
+    	}
     $('#button').click(function () {
         var value = $("#text").val();
 	    for(var i=0;i<keywords.length;i++){
